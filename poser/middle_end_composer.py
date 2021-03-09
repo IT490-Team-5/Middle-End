@@ -50,7 +50,6 @@ def back_end_composer():
 
 
 
-
 # =========================================
 # Name: middle_end_composer
 # Returns: None

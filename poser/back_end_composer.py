@@ -1,5 +1,5 @@
 from subprocess import Popen, PIPE
-import os
+import paramiko
 
 def middle_end_composer():
 	ssh = paramiko.SSHClient()
