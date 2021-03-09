@@ -1,3 +1,4 @@
+import subprocess
 from subprocess import Popen, PIPE
 import paramiko
 
@@ -33,7 +34,7 @@ def front_end_composer():
 	print(o)
 	if not o:
 		print("Flask server was off. Turning on..")
-		sp = Popen(["bash", "flaskstart.sh"])
+		subprocess.run(["python3", "app.py"])
 	else:
 		print("Front end services already on.")
 
